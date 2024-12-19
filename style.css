@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cutive&family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cutive&family=Kumbh+Sans:wght@100..900&family=Lato:wght@400;700&family=Syne:wght@400..800&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
@@ -10,25 +9,33 @@
     max-width: 100%;
 }
 
-/* body{
-    margin: 30px;
-} */
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
 
+.fullnav{
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 0.065vw solid #17340929;
+
+}
 
 .navBar {
-    width: 100%;
-    height: 50px;
-    position: fixed; 
-    top: 0; 
+    width: 88.2vw;
+    height: 3.32vw;
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 60px;
-    padding-left: 16px;
-    padding-right: 16px; 
-    border-bottom: 2px solid #17340929;
+    padding-top: 1.3vw;
+    padding-bottom: 3.9vw;
     color: #1D221B;
     background-color: #fff;
+    margin-left: 6.24vw;
 }
 
 
@@ -37,9 +44,9 @@
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
-    line-height: 42px;
-    font-size: 42px;
-    margin-left: 60px;
+    line-height: 2.73vw;
+    font-size: 2.73vw;
+    /* margin-left: 60px; */
 }
 
 .navSection{
@@ -47,14 +54,13 @@
     font-family: "Cutive", serif;
     font-weight: 400;
     font-style: normal;
-    line-height: 42px;
-    font-size: 28px;    
+    line-height: 2.73vw;
+    font-size: 1.82vw;    
 }
 
 .navSection div {
-    margin-right: 60px;
+    margin-right: 3.9vw;
     cursor: pointer;
-    
 } 
 
 .navSection div a{
@@ -63,40 +69,51 @@
 }
 
 .hero{
-
+    width: 88.2vw;
+    display: flex;
+    margin: 16.32vw auto 1.24vw auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     color: #1D221B;
     text-align: center;
     font-family: "Cutive", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 120px;
-    line-height: 140px;
-    margin-top: 1.8em ;
+    font-size: 7.1vw;
+    line-height: 8.1vw;
+
 }
 
 .hero img{
-    margin-top: 60px;
-    width: 90%;
+    margin-top: 3.9vw;
+    width: 88.2vw;
     height: 70%;
     margin:1.2em auto;
-    border-radius: 22px;
+    border-radius: 1.43vw;
     
 }
 
 .projects {
     display: grid;
-    width: 90%;
+    width: 88.2vw;
     margin: auto;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 48px;
-    margin-bottom: 140px;
+    gap: 2.12vw;
+    margin-bottom: 9.1vw;
+}
+
+.p img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .c1 {
     color: #1D221B;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.3vw;
+    line-height: 1.56vw;
     font-family: "Kumbh Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -107,8 +124,8 @@
 
 .c2{
     color: #1D221B9E;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.7vw;
+    line-height: 1.56vw;
     font-family: "Kumbh Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -117,15 +134,39 @@
 
 }
 
+@media (max-width: 1024px){
+    .projects{
+        grid-template-columns: repeat(2,1fr);
+        gap: 3vw;
+    }
+
+    .c1, .c2{
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+}
+
+@media (max-width: 768px){
+    .projects{
+        grid-template-columns: repeat(1,1fr);
+        gap: 4vw;
+    }
+
+    .c1, .c2{
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+}
+
 .contactMain{
-    margin-left: 80px;
+    margin-left: 5.2vw;
     text-align: start;
 }
 
 .contactUs {
     text-align: center;
-    margin-bottom: 120px;
-    border-bottom: 2px solid #17340929;
+    margin-bottom: 7.8vw;
+    border-bottom: 0.13vw solid #17340929;
     display: flex;
     justify-content: space-between;
 }
@@ -135,9 +176,9 @@
     font-family: "Cutive", serif;
     font-weight: 400;
     font-style: normal;
-    line-height: 40px;
-    font-size: 34px;
-    margin-bottom: 10px;
+    line-height: 2.6vw;
+    font-size: 2.21vw;
+    margin-bottom: 0.65vw;
 }
 
 .contactSub{
@@ -148,36 +189,37 @@
     font-weight: 500;
     font-style: normal;
     font-variation-settings:"YOPQ" 300;
-    line-height: 24px;
-    font-size: 20px;
-    margin-bottom: 32px;
+    line-height: 1.56vw;
+    font-size: 1.3vw;
+    margin-bottom: 2.08vw;
 
 }
 
 form {
-    max-width: 700px;
-    margin: 0 75px 0 auto;
+    max-width: 45.5vw;
+    margin: 0 6vw 1vw auto ;
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    margin-bottom: 80px;
+    gap: 1.04vw;
+    margin-bottom: 5.2vw;
+
 }
 
 .formRow {
     display: flex;
-    gap: 8px;
+    gap: 0.52vw;
 }
 
 .text{
-    width: 340px;
+    width: 22.42vw;
 }
 
 
 input, textarea, button {
-    font-size: 16px;
-    padding: 10px;
-    border: 2px solid #17340929;
-    border-radius: 8px;
+    font-size: 1.04vw;
+    padding: 0.65vw;
+    border: 0.13vw solid #17340929;
+    border-radius: 0.52vw;
     background-color: #DADACA66;
 } 
 
@@ -188,27 +230,27 @@ input::placeholder, textarea::placeholder {
     font-weight: 500;
     font-style: normal;
     font-variation-settings:"YOPQ" 300;
-    line-height: 20px;
-    font-size: 15px;
+    line-height: 1.3vw;
+    font-size: 0.97vw;
 } 
 
 .submit {
     background-color: #204F0A;
     color: #FBFFFA;
     cursor: pointer;
-    width: 83px;
+    width: 5.39vw;
 }
 
 textarea {
     resize: none;
-    height: 100px;
+    height: 6.5vw;
 }
 
 .footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 2.6vw;
 
 }
 
@@ -217,30 +259,21 @@ textarea {
     font-family: "Cutive", serif;
     font-weight: 400;
     font-style: normal;
-    line-height: 32px;
-    font-size: 28px;
-    margin-left: 80px;
+    line-height: 2.08vw;
+    font-size: 1.82vw;
+    margin-left: 5.2vw;
 }
 
 .subscribe{
-    margin-right: 80px;
-    width: 141px;
+    margin-right: 5.2vw;
+    width: 9.16vw;
     color: #1D221B;
     font-family: "Kumbh Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
     font-variation-settings:"YOPQ" 300;
-    line-height: 24px;
-    font-size: 20px;
+    line-height: 1.56vw;
+    font-size: 1.3vw;
     cursor: pointer;
 }
-@media screen and (max-width: 768px) {
-    .nav-toggle-label {
-        display: block;
-        padding: 1rem;
-    }
-    @media screen and (max-width: 480px) {
-        .hero div {
-            font-size: clamp(1.5rem, 10vw, 3rem);
-        }
